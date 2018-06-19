@@ -1,0 +1,12 @@
+.score {
+    color: green;
+    text-align: center;
+}
+
+.score-summary {
+    font-size: 48px;
+}
+
+.score-text {
+    width: 500px;
+}
