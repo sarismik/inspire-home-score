@@ -11,9 +11,9 @@ class UserToggle extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.props.onClick} className="user-toggle">
+                <a onClick={this.props.onClick} className="btn-link user-toggle">
                     Switch to user {this.props.otherUserId}
-                </button>
+                </a>
             </div>
         );
     }

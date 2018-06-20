@@ -1,5 +1,4 @@
 .score {
-    color: green;
     text-align: center;
 }
 
@@ -8,5 +7,5 @@
 }
 
 .score-text {
-    width: 500px;
+    width: 460px;
 }

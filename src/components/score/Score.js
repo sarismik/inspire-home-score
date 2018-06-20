@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../../styles/bootstrap/bootstrap.css';
 import './styles/score.css';
-
-/* TODO integrate with bootstrap or otherwise enhance style so it's obvious link can be clicked*/
 
 class Score extends Component {
     static propTypes = {
@@ -16,7 +15,7 @@ class Score extends Component {
     render() {
         return (
             <div className="score">
-                <table>
+                <table width="100%">
                     <tbody>
                         <tr><th colSpan={2}>Your Score</th></tr>
                         <tr><td colSpan={2} className="score-summary">{this.props.score}</td></tr>
@@ -26,7 +25,8 @@ class Score extends Component {
                             <th>Average daily temp</th></tr>
                         <tr>
                             <td>
-                                <a title="Click to see daily usage stats" onClick={this.props.onDailyUsageClick}>
+                                <a className="btn-link" title="Click to see daily usage stats"
+                                   onClick={this.props.onDailyUsageClick}>
                                     {this.props.avgDailyUsage}
                                 </a>
                             </td>

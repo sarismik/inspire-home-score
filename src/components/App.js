@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Score from './score/Score';
+import '../styles/bootstrap/bootstrap.css';
 import '../styles/base.css';
+import Score from './score/Score';
 import UserToggle from "./user/UserToggle";
 import DailyUsage from "./daily-usage/DailyUsage";
-
-/* TODO consider integrating with Bootstrap */
 
 class App extends Component {
     constructor(props) {
@@ -55,7 +54,7 @@ class App extends Component {
 
     updateStateBasedOnDailyUsageApi() {
         this.setState({loading: true,});
-        /* TODO consider making the prefix below a constant */
+        /* TODO consider making the URL prefix below a constant */
         fetch('https://stg-garcon.herokuapp.com/api/1/subscriptions/homescore/' + this.state.userId + '/energy/usage/daily')
             .then(results => {
                 return results.json()
