@@ -20,9 +20,11 @@ class Score extends Component {
                         <tr><th colSpan={2}>Your Score</th></tr>
                         <tr><td colSpan={2} className="score-summary">{this.props.score}</td></tr>
                         <tr><td colSpan={2} className="score-text">{this.props.scoreText}</td></tr>
+                        <tr><td height="10px"/></tr>
+                        <tr><th colSpan={2}>Daily Averages</th></tr>
                         <tr>
-                            <th>Average daily usage</th>
-                            <th>Average daily temp</th></tr>
+                            <td width="50%">Usage</td>
+                            <td width="50%">Temp</td></tr>
                         <tr>
                             <td>
                                 <a className="btn-link" title="Click to see daily usage stats"
